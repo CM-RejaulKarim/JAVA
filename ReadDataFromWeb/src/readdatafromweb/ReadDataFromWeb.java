@@ -24,7 +24,7 @@ public class ReadDataFromWeb {
             System.out.println("Enter File Name...");
             String fileName = s.next();
 
-            PrintWriter pw = new PrintWriter("C:\\Users\\user\\Desktop\\Java Store\\" + fileName + ".html");
+            PrintWriter pw = new PrintWriter("C:\\Users\\Admin\\Desktop\\FileClass\\" + fileName + ".html");
 
             System.out.println("Enter Web Address...");
             String web = s.next();
@@ -34,20 +34,21 @@ public class ReadDataFromWeb {
 //            System.out.println(scOut.nextLine());
 
 //            Pattern Match
-            Pattern pattern = Pattern.compile("<[^>]+>");
-
+//            Pattern pattern = Pattern.compile("<[^>]+>");
+//
             while (scOut.hasNext()) {
                 String x = scOut.nextLine();
 
-                Matcher matcher = pattern.matcher(x);
-
-                while (matcher.find()) {
-                    pw.println(matcher.group());
-                    System.out.println(matcher.group());
-                }
-
+//                Matcher matcher = pattern.matcher(x);
+//
+//                while (matcher.find()) {
+//                    pw.println(matcher.group());
+//                    System.out.println(matcher.group());
+//                }
+//
+                pw.println(x);
+                System.out.println(x);
             }
-//            pw.println(scOut.nextLine());
 
             pw.close();
             s.close();
