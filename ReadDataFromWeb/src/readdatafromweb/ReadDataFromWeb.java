@@ -24,7 +24,7 @@ public class ReadDataFromWeb {
             System.out.println("Enter File Name...");
             String fileName = s.next();
 
-            PrintWriter pw = new PrintWriter("C:\\Users\\Admin\\Desktop\\FileClass\\" + fileName + ".html");
+            PrintWriter pw = new PrintWriter("C:\\Users\\user\\Desktop\\Java Store\\FileClass\\" + fileName + ".html");
 
             System.out.println("Enter Web Address...");
             String web = s.next();
@@ -46,7 +46,7 @@ public class ReadDataFromWeb {
 //                    System.out.println(matcher.group());
 //                }
 //
-                pw.println(x);
+                pw.write(x);
                 System.out.println(x);
             }
 
