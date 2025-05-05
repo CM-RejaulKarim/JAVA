@@ -1,6 +1,11 @@
 package exceptionhandling;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.datatype.DatatypeConfigurationException;
 
 public class ExceptionHandling {
@@ -17,7 +22,7 @@ public class ExceptionHandling {
 
         } catch (ArithmeticException ex) {
 
-            System.err.println("Numbers are not integer number.");
+            System.err.println(ex + "\n");
         }
 
         Scanner s = new Scanner(System.in);
@@ -28,7 +33,14 @@ public class ExceptionHandling {
             System.out.println(number);
 
         } catch (Exception e) {
-            System.err.println("You didn't input a number.");
+            System.err.println(e);
+        }
+
+        try {
+            PrintWriter f = new PrintWriter("C:\\Users\\Admin\\Desktop\\FileClass\\New folder");
+
+        } catch (FileNotFoundException ex) {
+            System.err.println(ex);
         }
     }
 
