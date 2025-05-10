@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package librarymanagementsystem.lclass;
 
-/**
- *
- * @author user
- */
+import java.util.Date;
+
 public class Item {
+
+   private String title;
+   private String author;
+   private Date yearPublished;
+
+    public Item() {
+    }
+
+    public Item(String title, String author, Date yearPublished) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+    }
+    
+    public void printDetails(){
+    
+        System.out.println(title);
+        System.out.println(author);
+        System.out.println(yearPublished);
+    
+    }
+    
     
 }
