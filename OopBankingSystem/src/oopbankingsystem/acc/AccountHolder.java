@@ -12,6 +12,11 @@ public class AccountHolder {
         this.name = name;
         this.accountNumber = accountNumber;
     }
+
+    @Override
+    public String toString() {
+        return "AccountHolder{" + "name=" + name + ", accountNumber=" + accountNumber + '}';
+    }
     
     public double transectionFee(){
     
