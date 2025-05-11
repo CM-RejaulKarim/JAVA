@@ -1,29 +1,27 @@
 package librarymanagementsystem.lclass;
 
-import java.util.Date;
 
 public class Item {
 
-   private String title;
-   private String author;
-   private Date yearPublished;
+    private String title;
+    private String author;
+    private String yearPublished;
 
     public Item() {
     }
 
-    public Item(String title, String author, Date yearPublished) {
+    public Item(String title, String author, String yearPublished) {
         this.title = title;
         this.author = author;
         this.yearPublished = yearPublished;
     }
-    
-    public void printDetails(){
-    
-        System.out.println(title);
-        System.out.println(author);
-        System.out.println(yearPublished);
-    
+
+    public void printDetails() {
+
+        System.out.println("Title: "+title);
+        System.out.println("Author: "+author);
+        System.out.println("Published Year: "+yearPublished);
+
     }
-    
-    
+
 }
