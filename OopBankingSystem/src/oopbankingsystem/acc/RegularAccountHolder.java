@@ -1,6 +1,7 @@
 package oopbankingsystem.acc;
 
-public class RegularAccountHolder extends AccountHolder{
+public class RegularAccountHolder extends AccountHolder {
+
     private double transectionAmount;
 
     public RegularAccountHolder(double transectionAmount) {
@@ -20,14 +21,9 @@ public class RegularAccountHolder extends AccountHolder{
         this.transectionAmount = transectionAmount;
     }
 
-    
-
     @Override
     public double transectionFee() {
-        return transectionAmount*0.0185; 
+        return transectionAmount * 0.0185;
     }
 
-    
-    
-    
 }

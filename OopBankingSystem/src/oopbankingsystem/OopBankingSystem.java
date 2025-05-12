@@ -11,10 +11,10 @@ public class OopBankingSystem {
         PremiumAccountHolder premiumAcc = new PremiumAccountHolder(20000, "Sadiar", 77785);
 
         System.out.println(regularAcc);
-        System.out.println("Regular Account Transection fee: " + regularAcc.transectionFee() + " For BDT" + regularAcc.getTransectionAmount());
+        System.out.println("Regular Account Transection fee: " + regularAcc.transectionFee() + " For BDT-" + regularAcc.getTransectionAmount());
         System.out.println("====================================");
         System.out.println(premiumAcc);
-        System.out.println("Premium Account Transection fee: " + premiumAcc.transectionFee() + " For BDT" + premiumAcc.getTransectionAmount());
+        System.out.println("Premium Account Transection fee: " + premiumAcc.transectionFee() + " For BDT-" + premiumAcc.getTransectionAmount());
     }
 
 }

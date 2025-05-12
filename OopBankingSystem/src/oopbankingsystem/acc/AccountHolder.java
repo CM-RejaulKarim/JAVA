@@ -1,7 +1,7 @@
-
 package oopbankingsystem.acc;
 
 public class AccountHolder {
+
     private String name;
     private int accountNumber;
 
@@ -17,10 +17,10 @@ public class AccountHolder {
     public String toString() {
         return "AccountHolder{" + "name=" + name + ", accountNumber=" + accountNumber + '}';
     }
-    
-    public double transectionFee(){
-    
-    return 0.0;
+
+    public double transectionFee() {
+
+        return 0.0;
     }
-    
+
 }

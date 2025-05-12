@@ -1,6 +1,6 @@
 package polymorphismwitharray.areaclass;
 
-public class Rectangle extends Area {
+public class Rectangle extends Shape {
 
     private double height;
     private double width;
@@ -30,8 +30,13 @@ public class Rectangle extends Area {
     }
 
     @Override
-    public double area() {
-        return height * width;
+    public String area() {
+        return "The Area of Rectangle: "+height * width;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" + "height=" + height + ", width=" + width + '}';
     }
 
 }

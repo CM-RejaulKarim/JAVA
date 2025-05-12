@@ -1,6 +1,6 @@
 package polymorphismwitharray.areaclass;
 
-public class Circle extends Area {
+public class Circle extends Shape {
 
     private double radius;
 
@@ -20,8 +20,13 @@ public class Circle extends Area {
     }
 
     @Override
-    public double area() {
-        return Math.PI * Math.pow(radius, 2);
+    public String area() {
+        return "The Area of Circle: "+(Math.PI * Math.pow(radius, 2));
+    }       //
+
+    @Override
+    public String toString() {
+        return "Circle{" + "radius=" + radius + '}';
     }
 
 }

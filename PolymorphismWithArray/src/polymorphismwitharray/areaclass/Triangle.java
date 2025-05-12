@@ -1,6 +1,6 @@
 package polymorphismwitharray.areaclass;
 
-public class Triangle extends Area {
+public class Triangle extends Shape {
 
     private double height;
     private double base;
@@ -30,8 +30,13 @@ public class Triangle extends Area {
     }
 
     @Override
-    public double area() {
-        return (.5 * base * height);
+    public String area() {
+        return "The Area of Triangle: "+(.5 * base * height);
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" + "height=" + height + ", base=" + base + '}';
     }
 
 }
